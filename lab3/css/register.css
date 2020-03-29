@@ -1,0 +1,38 @@
+body {
+    background-image: url("../images/register.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align:center;
+}
+h1 {
+    color: #ffba09;
+}
+p {
+    color: orange;
+}
+option {
+    color: #44ff48;
+}
+.select-div {
+    border: 1px solid rgba(46, 255, 103, 0.93);
+    width: 100px;
+    height: 20px;
+    margin: auto;
+}
+.area {
+    width: 100px;
+    height: 20px;
+}
+input[type="checkbox"], input[type="radio"] {
+    width: 2em;
+}
+
+input[type="button"],input[type="submit"]  {
+    background: linear-gradient(to right,#00fffc,#fff600);
+    border: #171a21 solid 1px;
+    width: 4em;
+}
+
+input[type="button"],input[type="submit"],input[type="checkbox"], input[type="radio"], select:hover {
+    cursor: pointer;
+}

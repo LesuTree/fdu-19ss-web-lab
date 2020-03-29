@@ -1,13 +1,13 @@
 <!doctype html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="../../fdu-19ss-web-lab/lab3/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/register.css" />
     <meta charset="utf8">
     <title>Register</title>
 </head>
 <body>
 <header>
-    <nav><a href="index.html">主页</a>
+    <nav><h3><a href="index.html">主页</a></h3>
 	</nav>
 </header>
 <h1>创建帐户</h1>
@@ -27,7 +27,8 @@
     </p>
     <p>
         您的居住地<br>
-        <select name="area">
+        <div class="select-div">
+        <select class="area">
             <option value="shanghai" selected="selected">上海</option>
             <option value="beijing">北京</option>
             <option value="guangdong">广东</option>
@@ -36,6 +37,7 @@
             <option value="zhejiang">浙江</option>
             <option value="others">其他地方</option>
         </select>
+</div>
     </p>
     <p>
         您常用的设备<br>
@@ -86,7 +88,7 @@
 知乎有权对用户使用知乎的情况进行审查和监督，如用户在使用知乎时违反任何上述规定，知乎或其授权的人有权要求用户改正或直接采取一切必要的措施（包括但不限于更改或删除用户张贴的内容、暂停或终止用户使用知乎的权利）以减轻用户不当行为造成的影响。
 </textarea>
 <br>
-<input type="radio" value="agree" name="agree">同意
+<input type="radio" value="agree" name="agree" >同意
 <input type="radio" value="disagree" name="agree">不同意
 <p>
 <input type="submit" value="注册" name="continue">
