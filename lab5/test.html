@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    const arr = ["foo","bar","baz"];
+    const arrChangeMap = (arr) => new Map(arr.map( (key,value) => [value,key]));
+    console.log(arrChangeMap(arr));
+</script>
+</html>

@@ -26,15 +26,18 @@ function showWindowHref(){
 
 //提示：mul为html中id为"mul"的元素对象，可直接通过mul.value获得其内的输入值。
 let mul = document.getElementById("mul");
-let time=window.setInterval(timeTest,5000);
-let count=0;
+let fn=timeTest();
+let time=window.setInterval(fn,5000);
 function timeTest(){
-    if (count==10||new Date().getSeconds()==0){
-        clearInterval(time);
-    }
-    else {
-        mul.value=Math.pow(2,count);
-        count++;
+    let count=0;
+    return function () {
+
+        if (count == 10 || new Date().getSeconds() == 0) {
+            clearInterval(time);
+        } else {
+            mul.value = Math.pow(2, count);
+            count++;
+        }
     }
 }
 //3. 判断输入框most里出现最多的字符，并统计出来。统计出是信息在most_result输入框内以"The most character is:" + index + " times:" + max的形式显示。
