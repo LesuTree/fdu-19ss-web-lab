@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Lecture6 Sample</title>
+    <style>
+        body{font-size:16pt;}
+    </style>
 </head>
 <body>
-
-</body>
 <script>
-    const arr = ["foo","bar","baz"];
-    const arrChangeMap = (arr) => new Map(arr.map( (key,value) => [value,key]));
-    console.log(arrChangeMap(arr));
+    var scope = "global scope";
+
+    function checkscope(m){
+        {let scope = "local scope";}
+        if(m>0) scope = "nested scope";
+        return function(){ document.write("scope is "+scope+"<br>");}
+    }
+
+    var outer = checkscope(4);
+
+    outer();
+
+    document.write("scope is "+scope+"<br>");
 </script>
+</body>
 </html>
